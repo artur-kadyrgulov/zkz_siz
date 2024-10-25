@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:feop",
       "version": "1.15.3",
-      "toolsId": "cd5de755-fb5f-447c-8c4f-22fc5aee78e6"
+      "toolsId": "c1bd0035-2c58-4a40-a302-48a12b5efc9a"
     },
     "dataSources": {
       "mainService": {

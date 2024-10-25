@@ -32,8 +32,8 @@
     "watch-zkz_siz.listofemployees": "cds watch --open zkz_siz.listofemployees/webapp/index.html?sap-ui-xx-viewCache=false",
     "watch-zkz_siz.listofclothes": "cds watch --open zkz_siz.listofclothes/webapp/index.html?sap-ui-xx-viewCache=false",
     "watch-zkz_siz.listofassignedclothes": "cds watch --open zkz_siz.listofassignedclothes/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-zkz_siz.createassignedclothes": "cds watch --open zkz_siz.createassignedclothes/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-zkz_siz.createemployee": "cds watch --open zkz_siz.createemployee/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-zkz_siz.createemployee": "cds watch --open zkz_siz.createemployee/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-zkz_siz.createassignedclothes": "cds watch --open zkz_siz.createassignedclothes/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "sql": {
@@ -62,7 +62,7 @@
     "app/zkz_siz.listofemployees",
     "app/zkz_siz.listofclothes",
     "app/zkz_siz.listofassignedclothes",
-    "app/zkz_siz.createassignedclothes",
-    "app/zkz_siz.createemployee"
+    "app/zkz_siz.createemployee",
+    "app/zkz_siz.createassignedclothes"
   ]
 }
