@@ -1,0 +1,68 @@
+{
+  "name": "zkz_siz",
+  "version": "1.0.0",
+  "description": "My SAP project",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/hana": "^1",
+    "@sap-cloud-sdk/http-client": "^3.22.2",
+    "@sap-cloud-sdk/util": "^3.22.2",
+    "@sap/cds": "^8",
+    "@sap/low-code-event-handler": "^1.2.4",
+    "@sap/xsenv": ">=3.3.2 <3.3.3",
+    "@sap/xssec": "^4.2.6",
+    "express": "^4",
+    "hdb": "^0.19.10",
+    "passport": "^0.7.0",
+    "@sap/mdk-tools": "^1.3.1"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1",
+    "@sap/dev-cap-tools": "^1.31.0",
+    "@sap/ux-specification": "UI5-1.120"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "start-local": "npm run generate-entry-point && npm run cds-watch",
+    "generate-entry-point": "dev-cap-tools gen-entrypoint",
+    "cds-watch": "cds watch --open",
+    "watch-zkz_siz.listofemployees": "cds watch --open zkz_siz.listofemployees/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-zkz_siz.listofclothes": "cds watch --open zkz_siz.listofclothes/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-zkz_siz.listofassignedclothes": "cds watch --open zkz_siz.listofassignedclothes/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-zkz_siz.createassignedclothes": "cds watch --open zkz_siz.createassignedclothes/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-zkz_siz.createemployee": "cds watch --open zkz_siz.createemployee/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "sql": {
+      "native_hana_associations": false
+    },
+    "requires": {
+      "[production]": {
+        "db": "hana",
+        "auth": "xsuaa"
+      },
+      "app-service": {
+        "impl": "@sap/low-code-event-handler"
+      },
+      "auth": {
+        "[development]": {
+          "kind": "dummy"
+        },
+        "[production]": {
+          "kind": "xsuaa"
+        }
+      }
+    }
+  },
+  "lcap": true,
+  "sapux": [
+    "app/zkz_siz.listofemployees",
+    "app/zkz_siz.listofclothes",
+    "app/zkz_siz.listofassignedclothes",
+    "app/zkz_siz.createassignedclothes",
+    "app/zkz_siz.createemployee"
+  ]
+}
